@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblCredit"
+        android:layout_width="69dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/arizonia"
+        android:gravity="center_horizontal"
+        android:text="Credit"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblWinnings"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/arizonia"
+        android:text="Winnings"
+        android:textAlignment="center"
+        android:textColor="#040303"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCredit"
+        android:layout_width="125dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:background="#050505"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#0EEA17"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCredit" />
+
+    <TextView
+        android:id="@+id/txtWinnings"
+        android:layout_width="131dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="52dp"
+        android:background="#070707"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#09E612"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblWinnings" />
+
+    <ImageView
+        android:id="@+id/imgReel1"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCredit"
+        app:srcCompat="@drawable/cherries" />
+
+    <ImageView
+        android:id="@+id/imgReel2"
+        android:layout_width="117dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgReel3"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/imgReel1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cherries" />
+
+    <ImageView
+        android:id="@+id/imgReel3"
+        android:layout_width="95dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWinnings"
+        app:srcCompat="@drawable/cherries" />
+
+    <Button
+        android:id="@+id/btnSpin"
+        android:layout_width="222dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:text="SPIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgReel2" />
+
+    <Button
+        android:id="@+id/btnCredit"
+        android:layout_width="219dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        android:text="ADD CREDIT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpin" />
+
+    <Button
+        android:id="@+id/btnCollect"
+        android:layout_width="202dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:text="COLLECT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCredit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
